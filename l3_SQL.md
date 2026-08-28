@@ -27,6 +27,21 @@ SELECT prod_id, prod_name, prod_price
 FROM Products;
 ```
 
+To return only distinct combinations of attributes, include `DISTINCT`  after `SELECT`:
+
+```
+SELECT DISTINCT prod_price
+FROM Products;
+```
+
+### Questions
+
+1. Find all the information about each customer.
+2. Find the name and address of each customer.
+3. List the distinct countries where vendors come from.
+4. List every unique combination of vendor and price.
+
+
 ## WHERE
 
 The `WHERE` keyword filters data based on specified criteria. The `WHERE`  clause should directly follow the `FROM`  clause.
