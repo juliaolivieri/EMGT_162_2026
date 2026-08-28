@@ -87,6 +87,7 @@ SELECT *
 FROM Products
 LIMIT 3 OFFSET 2;
 ```
+
 ### Questions
 1. Find the five most expensive products
 2. Find the next five most expensive products
