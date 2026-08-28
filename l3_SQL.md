@@ -52,7 +52,7 @@ To filter to products with a specific vendor id:
 ```
 SELECT vend_id, prod_name
 FROM Products
-WHERE vend_id != `DLL01` ;
+WHERE vend_id != 'DLL01' ;
 ```
 
 To filter to products with a price between 5 and 10:
