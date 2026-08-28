@@ -79,9 +79,10 @@ To output the first three products:
 SELECT *
 FROM Products
 LIMIT 3;
-``` 
+```
 
 We can combine the `LIMIT` keyword with the `OFFSET`  keyword to skip the first $y$ rows:
+
 ```
 SELECT *
 FROM Products
