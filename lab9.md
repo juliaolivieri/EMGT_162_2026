@@ -112,7 +112,7 @@ Answer the following plot interpretation questions.
      
 2. Load these two dataframes into pandas and join them, saving the result as a new variable.  What columns should you merge on? What kind of merge should you use?
    
-4. Change the type of the `date`  and `date_noyear` to datetime objects using the following lines of code (replace `df`  with the name of your dataframe):
+3. Change the type of the `date`  and `date_noyear` to datetime objects using the following lines of code (replace `df`  with the name of your dataframe):
    
 ```
 df['date'] = pd.to_datetime(df['date'])
@@ -121,25 +121,22 @@ df['date_noyear'] = pd.to_datetime(df['date_noyear'])
 
 Note: this allows Python to interpret these columns as dates rather than strings, which improves plotting.
 
-5. Make a pairplot for this merged data. Which two variables have the strongest linear relationship (as one variable increases, the other tends to increase)?
-   
-6. Find the median number of *casual* riders per weekday (group by weekday, and find the median of `casual`). Which weekdays are most popular for casual riders?
-   
-7. Make a bar plot of the median number of casual riders per weekday.
-   
-8. Find the median number of *registered* riders per weekday (group by weekday, and find the median of `registered`). Which weekdays are most popular for registered riders?
-    
-9. Find the date with the minimum number of riders. Look up this date. Why do you think there were so few bike riders?
+4. Make a pairplot for this merged data. Which two variables have the strongest linear relationship (as one variable increases, the other tends to increase)?
 
-### End of graded portion
+5. Use `sns.relplot()` to make a plot with this data. You can use additional arguments to try to make as interesting/informative of a plot as possible.
+    
+6. What can you learn from the plot you created?
+    
+7. Use `sns.catplot()` to make a plot with this data. You can use additional arguments to try to make as interesting/informative of a plot as possible.
+    
+8. What can you learn from the plot you created?
 
-10. Use `sns.relplot()` to make a plot with this data. You can use additional arguments to try to make as interesting/informative of a plot as possible.
-    
-11. What can you learn from the plot you created?
-    
-12. Use `sns.catplot()` to make a plot with this data. You can use additional arguments to try to make as interesting/informative of a plot as possible.
-    
-13. What can you learn from the plot you created?
+9. Find the median number of *casual* riders per weekday (group by weekday, and find the median of `casual`). Which weekdays are most popular for casual riders?
+   
+10. Make a bar plot of the median number of casual riders per weekday.
+   
+11. Find the median number of *registered* riders per weekday (group by weekday, and find the median of `registered`). Which weekdays are most popular for registered riders?
+
 
 
 
