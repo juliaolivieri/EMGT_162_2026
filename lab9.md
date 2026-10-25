@@ -1,5 +1,57 @@
 # Lab 9
 
+Links to roller coaster dataset:
+* coasters.csv: https://drive.google.com/file/d/1OWspBvnysh6Bf7dyBLywId6ZVS1RzXgV/view?usp=sharing
+* parks.csv: https://drive.google.com/file/d/14WvN9oId5zdBVkqRZggxnn3WnH5CJ-qy/view?usp=sharing
+
+Links to penguins dataset:
+* penguins.csv: https://drive.google.com/file/d/1ESxaIakPh6IpsA_x1H1798003CuqJP8r/view
+* penguin_species.csv: https://drive.google.com/file/d/1ZuDVMF-6BM6bKV2SHKwkg9sG2w8OCh5-/view?usp=sharing
+
+
+## Joining Data Frames
+
+### Code from class:
+
+```
+penguins = pd.read_csv("penguins.csv")
+species = pd.read_csv("penguin_species.csv")
+
+# inner join
+penguins.merge(species, how = "inner", left_on = "species", right_on = "name")
+
+# outer join
+penguins.merge(species, how = "outer", left_on = "species", right_on = "name")
+
+# left join
+penguins.merge(species, how = "left", left_on = "species", right_on = "name")
+
+# right join
+penguins.merge(species, how = "right", left_on = "species", right_on = "name")
+```
+
+## Plotting
+
+### Code from class:
+
+```
+# histogram
+sns.displot(penguins, x = "flipper_length_mm", hue = "island")
+
+# kde plot
+sns.displot(penguins, x = "flipper_length_mm", hue = "island", kind = "kde")
+
+# scatter plot
+sns.relplot(penguins, x = "bill_length_mm", y = "bill_depth_mm", col = "sex", size = "body_mass_g", hue = "species")
+
+# swarm plot
+sns.catplot(penguins, x = "species", y = "body_mass_g", hue = "sex")
+
+# box plot
+sns.catplot(penguins, x = "species", y = "body_mass_g", hue = "sex", kind = "box")
+```
+
+
 ## Aggregation
 
 | Function | Description |
