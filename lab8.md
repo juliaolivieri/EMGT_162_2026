@@ -50,6 +50,9 @@ You will submit the .html version of your Jupyter Notebook for this assignment (
 1. What can you learn from the plot you created? Feel free to try different combinations of variables until you find something interesting. 
 1. Create a bar plot for one of the non-quantitative variables. Set `col` as one of the non-quantitative columns.
 1. What can you learn from the plot you created? Feel free to try different combinations of variables until you find something interesting.
+1. Create a plot comparing the distribution of median salaries for STEM and non-STEM majors. What differences do you notice between the two distributions?
+1. Create a scatterplot with ShareWomen on the x-axis and Median_salary on the y-axis. Color the points by STEM. Describe any patterns you notice.
+1. What is the relationship between median salary and unemployment rate? 
 1. Think of a question about this dataset that you can answer using the tools we've learned so far (for example, "what's the difference in employment rate between STEM and non-STEM majors?").
 1. Answer your question. Try to gather as much relevant evidence as you can (e.g. plot(s), values in the dataframe, etc). Describe what you are able to conclude.    
 1. Download your jupyter notebook as an html file and submit it (File --> Save and export notebook as... --> html). Make sure each question is labeled in the notebook.
