@@ -122,20 +122,22 @@ df['date_noyear'] = pd.to_datetime(df['date_noyear'])
 Note: this allows Python to interpret these columns as dates rather than strings, which improves plotting.
 
 4. Make a pairplot for this merged data. Which two variables have the strongest linear relationship (as one variable increases, the other tends to increase)?
-
-5. Use `sns.relplot()` to make a plot with this data. You can use additional arguments to try to make as interesting/informative of a plot as possible.
-    
-6. What can you learn from the plot you created?
-    
-7. Use `sns.catplot()` to make a plot with this data. You can use additional arguments to try to make as interesting/informative of a plot as possible.
-    
-8. What can you learn from the plot you created?
-
-9. Find the median number of *casual* riders per weekday (group by weekday, and find the median of `casual`). Which weekdays are most popular for casual riders?
    
-10. Make a bar plot of the median number of casual riders per weekday.
+6. Use `sns.displot()` to make a plot with this data. You can use additional arguments to try to make as interesting/informative of a plot as possible.
    
-11. Find the median number of *registered* riders per weekday (group by weekday, and find the median of `registered`). Which weekdays are most popular for registered riders?
+7. What can you learn from the plot you created?
+
+8. Use `sns.relplot()` to make a plot with this data. You can use additional arguments to try to make as interesting/informative of a plot as possible.
+    
+9. What can you learn from the plot you created?
+    
+10. Use `sns.catplot()` to make a plot with this data. You can use additional arguments to try to make as interesting/informative of a plot as possible.
+    
+11. What can you learn from the plot you created?
+
+12. Sort the data by `count`. What days had the lowest rider counts? Google these dates - is there a reason for these dates having few riders?
+
+    
 
 
 
